@@ -19,10 +19,11 @@ void process(int **array, int *size) {
             }
             if ((*array)[i] > 0){
                 col ++;
+                (*array) = realloc(*array, col* sizeof(int));
                 for (int k = col-1; k > i+1; k--){
                     (*array)[k] = (*array)[k - 1];
                 }
-                (*array) = realloc(*array, col* sizeof(int));
+
                 (*array)[i+1] = (*array)[i];
                 i++;
             }

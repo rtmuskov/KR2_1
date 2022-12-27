@@ -61,6 +61,12 @@ build CMakeFiles/KR2.dir/process.c.obj: C_COMPILER__KR2_Debug C$:/Users/evgen/CL
   OBJECT_DIR = CMakeFiles\KR2.dir
   OBJECT_FILE_DIR = CMakeFiles\KR2.dir
 
+build CMakeFiles/KR2.dir/process2.c.obj: C_COMPILER__KR2_Debug C$:/Users/evgen/CLionProjects/KR2/process2.c || cmake_object_order_depends_target_KR2
+  DEP_FILE = CMakeFiles\KR2.dir\process2.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\KR2.dir
+  OBJECT_FILE_DIR = CMakeFiles\KR2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target KR2
@@ -69,7 +75,7 @@ build CMakeFiles/KR2.dir/process.c.obj: C_COMPILER__KR2_Debug C$:/Users/evgen/CL
 #############################################
 # Link the executable KR2.exe
 
-build KR2.exe: C_EXECUTABLE_LINKER__KR2_Debug CMakeFiles/KR2.dir/main.c.obj CMakeFiles/KR2.dir/process.c.obj
+build KR2.exe: C_EXECUTABLE_LINKER__KR2_Debug CMakeFiles/KR2.dir/main.c.obj CMakeFiles/KR2.dir/process.c.obj CMakeFiles/KR2.dir/process2.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\KR2.dir

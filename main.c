@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "process.h"
+#include "process2.h"
 int* input(int* num)
 {
     int i,n;
@@ -29,9 +30,11 @@ int main() {
     int size;
     int flag = 0;
     int *array = input(&size);
-    //printf("Printed number func: ");
+    printf("Printed number func: ");
+    scanf("%d", &flag);
     printf("Printed mass: \n");
-    process(&array, &size);
+    if(flag == 1) process(&array, &size);
+    if(flag == 2) process2(&array, &size);
     output(array, size);
     free(array);
     return 0;
