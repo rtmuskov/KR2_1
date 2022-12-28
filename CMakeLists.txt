@@ -3,4 +3,4 @@ project(KR2 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(KR2 main.c process.c process.h process2.c process2.h)
+add_executable(KR2 main.c process.c process.h process2.c process2.h process3.c process3.h)
