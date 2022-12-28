@@ -8,12 +8,14 @@ void process3(int **array, int *size) {
             for (j = i + 1; j < col; j++) {
                 if ((*array)[i] == (*array)[j]) {
                     col--;
-                    for (int k = j; k < col - 1; k++) {
+                    for (int k = j; k < col ; k++) {
                         (*array)[k] = (*array)[k + 1];
                     }
                     (*array) = realloc(*array, col * sizeof(int));
                     i--;
                     j--;
+
+
                 }
             }
 
